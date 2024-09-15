@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contactanos</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="./index.html">Inicio</a>
+        <a href="./nosotros.html">Nosotros</a>
+        <a href="./contacto.html">Contacto</a>
+    </nav>
+
+    <section id="contacto">
+        <div class="mapa">
+            <h2>Donde nos ubicamos</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.7456195193217!2d-58.38386052349704!3d-34.762000265876004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3cfe17256bd%3A0x6aa803a255507fa4!2sFerreter%C3%ADa%20Ferreshop%20Temperley!5e0!3m2!1ses!2sar!4v1726349401034!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div class="mensaje">
+            <h2>Dejanos tu mensaje</h2>
+            <form action="" method="post">
+                <div id="nombre">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="input-nombre" placeholder="Nombre">
+                </div>
+                <div id="apellido">
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" id="input-apellido" placeholder="Apellido">
+                </div>
+                <div id="textarea">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="textarea" id="input-mensaje" placeholder="Tu mensaje"></textarea>
+                </div>
+                <button type="submit" id="boton-enviar">Enviar</button>
+
+            </form>
+
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="newsletter">
+            <div>
+                <span id="span-newsletter">Newsletter</span>
+                <form action="" method="post">
+                    <label for="newsletter">Registrate y recibí los nuevos ingresos y ofertas.</label>
+                    <input type="email" name="newsletter" id="newsletter" placeholder="Ingresa tu Email" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+    </footer>
+    <div>
+        <span> &copy; Derechos reservados</span>
+        <span>
+            <a href="">Instagram</a>
+            <a href="">X</a>
+        </span>
+    </div>
+</body>
+
+</html>

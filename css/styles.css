@@ -1,0 +1,167 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color:darkred;
+}
+
+
+header{
+  text-align: center;
+  color: rgb(197, 8, 8);
+  background-color: rgb(24, 22, 22);
+  display: flex;
+  justify-content: center;
+  font-size: 200%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px; /* Ajusta el espacio horizontal si lo deseas */
+    background-color: rgb(175, 175, 82);
+  }
+
+nav a{
+  font-size:30px;
+  text-decoration: solid;
+}
+
+
+.muestra{
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+
+.imagenes{
+  justify-content: center;
+  display: flex;
+  column-gap: 10px;
+  row-gap: 5px;
+  flex-wrap: wrap;
+}
+
+.imagenes img{
+  width: 32%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.newsletter{
+
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter div{
+  width: 100%; 
+  display: flex; 
+}
+
+.newsletter div span{
+  font-size: 70px;
+}
+
+
+.newsletter div form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  
+}
+
+.newsletter div form input{
+  width: 450px;
+  height: 25px;
+  position:absolute;
+  right: 25%;
+}
+
+label{
+  position: absolute;
+  right: 53%;
+  font-size: 25px;
+}
+
+footer{
+  background-color: rgb(175, 175, 82);
+}
+
+button{
+  width: 100px;
+  height: 30px;
+  position:absolute;
+  right: 18%;
+}
+
+.barra-busqueda{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  height: 10%;
+
+}
+
+#barra{
+  padding: 12px 500px;
+  font-size: 20px;
+  text-align: left;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+
+
+#contacto{
+
+  display: flex;
+  text-align: center;
+  justify-content:center;
+}
+
+.mapa{
+
+  margin: 10px;
+
+}
+
+.mensaje{
+  flex: 1;
+
+  width: 600px;
+  text-align: center;
+  margin: 10px;
+}
+
+#nombre, #apellido, #textarea{
+  margin-bottom: 40px;
+  margin-left: 50px;
+  
+}
+
+#input-nombre{
+  padding: 10px 50px;
+}
+
+#input-apellido{
+  padding: 10px 50px;
+}
+
+#input-mensaje{
+  padding: 50px;
+}
+
+.mensaje button{
+  margin-right: 225px;
+}
+
+
