@@ -1,43 +1,45 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color:darkred;
+  width: 100%;
+  background-color: darkred;
 }
 
-
-header{
-  text-align: center;
-  color: rgb(197, 8, 8);
-  background-color: rgb(24, 22, 22);
+header {
   display: flex;
   justify-content: center;
+  text-align: center;
+  width: 100%;
+  color: rgb(197, 8, 8);
+  background-color: rgb(24, 22, 22);
   font-size: 200%;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px; /* Ajusta el espacio horizontal si lo deseas */
-    background-color: rgb(175, 175, 82);
-  }
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: rgb(175, 175, 82);
+}
 
-nav a{
-  font-size:30px;
+nav a {
+  font-size: 30px;
   text-decoration: solid;
 }
 
 
-.muestra{
+/* ------- Imagenes ------------- */
+.muestra {
   align-items: center;
-
   display: flex;
   flex-direction: column;
   font-size: 25px;
   padding-bottom: 30px;
 }
 
-.imagenes{
+.imagenes {
   justify-content: center;
   display: flex;
   column-gap: 10px;
@@ -45,123 +47,180 @@ nav a{
   flex-wrap: wrap;
 }
 
-.imagenes img{
+.imagenes img {
+  display: flex;
+  flex-wrap: wrap;
   width: 32%;
   height: 350px;
   border-radius: 10px;
 }
 
-.newsletter{
+/* -----------newsletter----------- */
 
-  padding: 25px;
+.newsletter {
+  padding: 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.newsletter div{
-  width: 100%; 
-  display: flex; 
-}
-
-.newsletter div span{
-  font-size: 70px;
-}
-
-
-.newsletter div form{
+.newsletter div {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  margin-left: 0px;
   justify-content: center;
-  align-items:center;
-  
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.newsletter div form input{
-  width: 450px;
+.newsletter span {
+  margin-right: 50px;
+  font-size: 60px;
+
+}
+
+
+.newsletter div form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.newsletter div form input {
+  margin: 5px;
+  width: 400px;
   height: 25px;
-  position:absolute;
-  right: 25%;
+
+
 }
 
-label{
-  position: absolute;
+label {
+
   right: 53%;
   font-size: 25px;
 }
 
-footer{
+footer {
   background-color: rgb(175, 175, 82);
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
-button{
+button {
   width: 100px;
   height: 30px;
-  position:absolute;
+
   right: 18%;
 }
 
-.barra-busqueda{
+
+/* -----------barra de busqueda----------- */
+
+.barra-busqueda {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
   width: 100%;
   height: 10%;
-
+  margin-top: 30px;
 }
 
-#barra{
-  padding: 12px 500px;
+#barra {
+  width: 70%;
+  height: 50%;
   font-size: 20px;
   text-align: left;
   border-radius: 10px;
   box-sizing: border-box;
 }
 
+/* -----------contacto y mapa ----------- */
 
-
-#contacto{
-
+#contacto {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
-  justify-content:center;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
 }
 
-.mapa{
+.mapa {
 
   margin: 10px;
-
+  width: 49%;
 }
 
-.mensaje{
-  flex: 1;
+.mensaje {
 
-  width: 600px;
-  text-align: center;
+
+  width: 45%;
   margin: 10px;
 }
 
-#nombre, #apellido, #textarea{
+
+.form-mensaje{
+  display: inline-block;
+  align-items: center;
+  margin: 60px;
+}
+
+#nombre,
+#apellido,
+#textarea {
+  display: flex;
+
   margin-bottom: 40px;
   margin-left: 50px;
-  
+  width: 100%;
 }
 
-#input-nombre{
+#nombre label,
+#apellido label,
+#textarea label{
+  margin-bottom: 10px;
+  position: static;
+  margin-right: 15px;
+}
+
+#input-nombre, #input-apellido {
   padding: 10px 50px;
 }
 
-#input-apellido{
-  padding: 10px 50px;
-}
 
-#input-mensaje{
+
+#input-mensaje {
   padding: 50px;
 }
 
-.mensaje button{
-  margin-right: 225px;
+.mensaje button {
+  cursor: pointer;
 }
 
 
+
+
+@media(max-width:480px){
+  .imagenes img{
+    flex-direction: column;
+    height: 150px;
+    width: 50%;
+  }
+
+  #contacto {
+    flex-direction: column;
+    text-align: start;
+    justify-content: start;
+    width: 50%;
+
+  }
+
+  .mapa, .mensaje{
+    flex-direction: column;
+  }
+}
